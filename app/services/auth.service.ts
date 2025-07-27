@@ -101,7 +101,7 @@ export async function Register(req: Request, res: Response) {
     );
 
     res.status(201).json({
-        success: "true",
+        success: true,
         message: "user created",
         id:data.id,
         token,

@@ -8,7 +8,7 @@ export default function ErrorHandler(
     next: NextFunction,
 ) {
     res.status(err.statusCode || 500).json({
-        success: "false",
+        success: false,
         message: err.message,
     });
 }
