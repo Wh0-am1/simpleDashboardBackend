@@ -51,7 +51,6 @@ export async function Login(req: Request, res: Response) {
         },
     );
 
-    console.log(token)
 
     res.status(200).json({
         success: true,
